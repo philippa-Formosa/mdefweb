@@ -76,7 +76,7 @@ function tokyo_tm_modalbox_news(){
 		var element 	= jQuery(this);
 		var details 	= element.find('.list_inner').html();
 		var buttons 	= element.find('.details .title a,.tokyo_tm_full_link,.tokyo_tm_read_more a');
-		var mainImage	= element.find('.main');
+		var mainImage	= element.find('.image .main');
 		var imgData		= mainImage.data('img-url');
 		var title		= element.find('.title');
 		var titleHref	= element.find('.title a').html();
@@ -84,11 +84,12 @@ function tokyo_tm_modalbox_news(){
 			jQuery('body').addClass('modal');
 			modalBox.addClass('opened');
 			modalBox.find('.description_wrap').html(details);
-			mainImage = modalBox.find('.main');
+			mainImage = modalBox.find('.image .main');
 			mainImage.css({backgroundImage: 'url('+imgData+')'});
 			title = modalBox.find('.title');
 			title.html(titleHref);
 			tokyo_tm_imgtosvg();
+			tokyo_tm_data_images();
 			return false;
 		});
 	});

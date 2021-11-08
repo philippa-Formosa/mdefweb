@@ -1139,6 +1139,10 @@ h6 { font-size: 16px; }
 	opacity: 0;
 	min-width: 100%;
 }
+.tokyo_tm_modalbox .additional_images ul li .my_image img{
+	opacity: 0;
+	min-height: 100%;
+}
 .tokyo_tm_modalbox .additional_images ul li .my_image .main{
 	position: absolute;
 	top: 0px;
@@ -1149,6 +1153,9 @@ h6 { font-size: 16px; }
 	background-size: cover;
 	background-position: center;
 }
+
+
+
 
 /*---------------------------------------------------*/
 /*	08) TOKYO NEWS
